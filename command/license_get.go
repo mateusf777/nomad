@@ -2,7 +2,11 @@ package command
 
 import (
 	"fmt"
+
+	"github.com/mitchellh/cli"
 )
+
+var _ cli.Command = &LicenseGetCommand{}
 
 type LicenseGetCommand struct {
 	Meta
