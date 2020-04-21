@@ -14,6 +14,7 @@ Usage: nomad license put [options]
 
 Gets a new license in Servers and Clients
 General Options:
+
 	` + generalOptionsUsage() + `
 
 Get Options:

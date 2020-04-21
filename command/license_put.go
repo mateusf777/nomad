@@ -19,15 +19,16 @@ type LicensePutCommand struct {
 func (c *LicensePutCommand) Help() string {
 	helpText := `
 Usage: nomad license put [options]
-	Puts a new license in Servers and Clients
-	General Options:
-		` + generalOptionsUsage() + `
-	Install a new license from a file:
-		$ nomad license put @nomad.license
-	Install a new license from stdin:
-		$ nomad license put -
-	Install a new license from a string:
-		$ nomad license put "<license blob>"
+
+Puts a new license in Servers and Clients
+General Options:
+	` + generalOptionsUsage() + `
+Install a new license from a file:
+	$ nomad license put @nomad.license
+Install a new license from stdin:
+	$ nomad license put -
+Install a new license from a string:
+	$ nomad license put "<license blob>"
 	`
 	return helpText
 }

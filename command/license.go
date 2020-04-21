@@ -17,24 +17,25 @@ func (l *LicenseCommand) Help() string {
 	helpText := `
 Usage: nomad license <subcommand> [options] [args]
 	
-	This command has subcommands for managing the Nomad Enterprise license.
-	For more detailed examples see:
-	https://www.nomadproject.io/docs/commands/license/
-	Install a new license from a file:
-		$ nomad license put @nomad.license
-	
-	Install a new license from stdin:
-		$ nomad license put -
-	
-	Install a new license from a string:
-		$ nomad license put "<license blob>"
-	
-	Retrieve the current license:
-	
-		$ nomad license get
-	
-	Reset the current license:
-		$ nomad license reset
+This command has subcommands for managing the Nomad Enterprise license.
+For more detailed examples see:
+https://www.nomadproject.io/docs/commands/license/
+
+Install a new license from a file:
+	$ nomad license put @nomad.license
+
+Install a new license from stdin:
+	$ nomad license put -
+
+Install a new license from a string:
+	$ nomad license put "<license blob>"
+
+Retrieve the current license:
+
+	$ nomad license get
+
+Reset the current license:
+	$ nomad license reset
 	`
 	return strings.TrimSpace(helpText)
 }
